@@ -20,11 +20,10 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text>Holi, se abrió la app</Text>
 
 {/* Today's Tasks */}
       <View style={styles.tasksWrapper}>
-        <Text style={styles.sectionTitle}>Today's tasks</Text>
+        <Text style={styles.sectionTitle}>Tareas de hoy</Text>
 
         <View style={styles.items}>
           {/* this where the tasks will go */}
@@ -43,7 +42,7 @@ export default function App() {
       {/* write a task */}
 
       <KeyboardAvoidingView style={styles.writeTaskWrapper}>
-        <TextInput style={styles.input} placeholder={'Write a task'}
+        <TextInput style={styles.input} placeholder={'Escribir una tarea'}
         value={task}
         onChangeText={text => setTask(text)}/>
         <TouchableOpacity onPress={() => handleTask()}>
